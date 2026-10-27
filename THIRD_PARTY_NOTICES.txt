@@ -1,0 +1,89 @@
+Upstream application
+====================
+
+Original project: chiptool by LuSlower
+Repository: https://github.com/LuSlower/chiptool
+Inspected upstream revision: b5c76822a925137c7b46b69669f55d4f98ab7956
+Upstream license: https://github.com/LuSlower/chiptool/blob/b5c76822a925137c7b46b69669f55d4f98ab7956/LICENSE
+Original assembly copyright notice, retained verbatim: Copyright ©  2025
+
+This is a modified version, distributed under GPL-3.0-only. Changes dated
+2026-10-27 include direct driver access, automatic loading, bit-field handling,
+output formatting and standalone packaging. The full upstream GPLv3 text is
+included in LICENSE. The upstream project's authors retain their rights.
+
+Bundled drivers
+===============
+
+These drivers are redistributed as unmodified vendor binaries. Their licenses
+are separate from the GPL-3.0-only license of this modified chiptool distribution.
+No WinRing0 or InpOut DLL is bundled or required.
+
+WinRing0
+--------
+File: src/WinRing0x64.sys
+Installed name: winring.sys
+Version: 1.2.0.5
+SHA-256: 11BD2C9F9E2397C9A16E0990E4ED2CF0679498FE0FD418A3DFDAC60B5C160EE5
+Project: https://openlibsys.org/
+License: https://openlibsys.org/manual/License.html
+Original driver source mirror: https://github.com/QCute/WinRing0/tree/master/dll/sys
+The binary's copyright field identifies Copyright (C) 2007-2008 OpenLibSys.org.
+
+The modified BSD license
+
+Copyright (c) 2007-2010 OpenLibSys.org. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+InpOut
+------
+File: src/inpoutx64.sys
+Installed name: inpout.sys
+Driver version: 1.2 x64, from the InpOut 1.5.0.1 distribution
+SHA-256: F8965FDCE668692C3785AFA3559159F9A18287BC0D53ABB21902895A8ECF221B
+Project and source downloads: https://www.highrez.co.uk/downloads/inpout32/
+Driver source: https://www.highrez.co.uk/scripts/download.asp?package=InpOutInterfaceDriver
+License: license.txt in the official InpOutBinaries_1501.zip distribution
+The SYS file matches the driver embedded in that distribution's x64 DLL.
+
+MIT License
+
+Copyright (c) <2003-2015> Phil Gibbons <www.highrez.co.uk>
+Portions Copyright (c) <2000> <logix4u.net>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
